@@ -1,17 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  <App  />
+);
+//
+
+
+// import * as React from "react";
+// import { render } from "react-dom";
+// import { makeAutoObservable } from "mobx";
+// import { observer } from "mobx-react-lite";
+// import "mobx-react-lite/batchingForReactDom";
+// import {Counter} from "./Store/Counter";
+//
+// class Hello {
+//   name = "";
+//
+//   constructor(name) {
+//     makeAutoObservable(this);
+//     this.name = name;
+//   }
+//
+//   decrement(){
+//     this.name = 'sadsad'
+//   }
+// }
+//
+// const HelloView = observer(({ hello }) => {
+//   const dsad = () => hello.decrement()
+//   return (<div>
+//     <button onClick={dsad}>sdad</button>
+//     Hello {hello.name}
+//   </div>)
+// });
+//
+// const hello = new Hello("world");
+// const Counter = new Counter();
+//
+// render(<HelloView hello={hello} />, document.getElementById("root"));
